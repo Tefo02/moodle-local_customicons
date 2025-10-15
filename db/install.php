@@ -19,7 +19,7 @@
  *
  * @package     local_customicons
  * @category    upgrade
- * @copyright   2025 Your Name <you@example.com>
+ * @copyright   2025 Stefano Lopes Delgado <stefanolopes84@gmail.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
