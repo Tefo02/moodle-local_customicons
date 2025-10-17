@@ -70,7 +70,7 @@ function local_customicons_coursemodule_updated($cm, $mform) {
  * Usaremos este ponto de entrada para injetar nosso CSS na página do curso.
  */
 function local_customicons_extend_navigation(global_navigation $nav) {
-    global $PAGE, $DB, $COURSE, $CFG; // Adicionamos $CFG ao escopo global
+    global $PAGE, $DB, $COURSE, $CFG;
 
     if ($PAGE->pagelayout !== 'course' || empty($COURSE->id)) {
         return;
@@ -93,13 +93,14 @@ function local_customicons_extend_navigation(global_navigation $nav) {
     foreach ($customicons as $customicon) {
         $iconurl = (new moodle_url('/local/customicons/pix/activity_icons/' . $customicon->icon_name))->out(false);
         $safecssurl = addslashes($iconurl);
+        
         $cssrules[] = "#module-{$customicon->cmid} .activityicon { content: url('{$safecssurl}'); }";
+        $cssrules[] = "#module-{$customicon->cmid} .tile-icon img { content: url('{$safecssurl}'); }";
     }
 
     if (!empty($cssrules)) {
         $css = implode("\n", $cssrules);
         $styleblock = "<style>\n" . $css . "\n</style>";
-
         $CFG->additionalhtmlhead .= $styleblock;
     }
 }

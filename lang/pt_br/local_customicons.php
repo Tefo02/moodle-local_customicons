@@ -25,9 +25,6 @@
 
 defined('MOODLE_INTERNAL') || die();
 
-<?php
-defined('MOODLE_INTERNAL') || die();
-
 $string['pluginname'] = 'Ícones Personalizados';
 $string['customfieldset'] = 'Ícone da Atividade Personalizado';
 $string['customfieldlabel'] = 'Selecione um ícone';
