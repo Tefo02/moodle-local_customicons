@@ -23,23 +23,9 @@
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
+
 defined('MOODLE_INTERNAL') || die();
 
-/**
- * Execute local_customicons upgrade from the given old version.
- *
- * @param int $oldversion
- * @return bool
- */
 function xmldb_local_customicons_upgrade($oldversion) {
-    global $DB;
-
-    $dbman = $DB->get_manager();
-
-    // For further information please read {@link https://docs.moodle.org/dev/Upgrade_API}.
-    //
-    // You will also have to create the db/install.xml file by using the XMLDB Editor.
-    // Documentation for the XMLDB Editor can be found at {@link https://docs.moodle.org/dev/XMLDB_editor}.
-
     return true;
 }

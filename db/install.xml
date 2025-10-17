@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<XMLDB PATH="local/customicons/db" VERSION="2025101600" COMMENT="Arquivo XMLDB para o plugin local_customicons">
+    <TABLES>
+        <TABLE NAME="local_customicons_data" COMMENT="Armazena os ícones customizados para os módulos de curso.">
+            <FIELDS>
+                <FIELD NAME="id" TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
+                <FIELD NAME="cmid" TYPE="int" LENGTH="10" NOTNULL="true" COMMENT="ID da tabela course_modules."/>
+                <FIELD NAME="icon_name" TYPE="char" LENGTH="100" NOTNULL="true" COMMENT="Nome do arquivo do ícone."/>
+                <FIELD NAME="timecreated" TYPE="int" LENGTH="10" NOTNULL="true"/>
+                <FIELD NAME="timemodified" TYPE="int" LENGTH="10" NOTNULL="true"/>
+            </FIELDS>
+            <KEYS>
+                <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
+                <KEY NAME="cmid_uk" TYPE="unique" FIELDS="cmid" COMMENT="Garante uma entrada por módulo de curso."/>
+            </KEYS>
+        </TABLE>
+    </TABLES>
+</XMLDB>

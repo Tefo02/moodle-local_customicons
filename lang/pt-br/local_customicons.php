@@ -15,18 +15,20 @@
 // along with Moodle.  If not, see <https://www.gnu.org/licenses/>.
 
 /**
- * Code to be executed after the plugin's database scheme has been installed is defined here.
+ * Plugin strings are defined here.
  *
  * @package     local_customicons
- * @category    upgrade
- * @copyright   2025 Stefano Lopes Delgado <stefanolopes84@gmail.com>
+ * @category    string
+ * @copyright   Stefano Lopes Delgado <stefanolopes84@gmail.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-/**
- * Custom code to be run on installing the plugin.
- */
-function xmldb_local_customicons_install() {
+defined('MOODLE_INTERNAL') || die();
 
-    return true;
-}
+<?php
+defined('MOODLE_INTERNAL') || die();
+
+$string['pluginname'] = 'Ícones Personalizados';
+$string['customfieldset'] = 'Ícone da Atividade Personalizado';
+$string['customfieldlabel'] = 'Selecione um ícone';
+$string['nodefaulticon'] = 'Usar ícone padrão';

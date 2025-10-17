@@ -26,3 +26,6 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['pluginname'] = 'Custom Icons';
+$string['customfieldset'] = 'Custom Activity Icon';
+$string['customfieldlabel'] = 'Select an icon';
+$string['nodefaulticon'] = 'Use default icon';
