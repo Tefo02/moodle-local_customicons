@@ -29,3 +29,4 @@ $string['pluginname'] = 'Ícones Personalizados';
 $string['customfieldset'] = 'Ícone da Atividade Personalizado';
 $string['customfieldlabel'] = 'Selecione um ícone';
 $string['nodefaulticon'] = 'Usar ícone padrão';
+$string['usecustomicon'] = 'Usar um ícone personalizado para esta atividade';

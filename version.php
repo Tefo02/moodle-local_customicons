@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_customicons';
-$plugin->version   = 2025171001;
+$plugin->version   = 202517100;
 $plugin->requires  = 2024052000;
 $plugin->maturity  = MATURITY_ALPHA;
 $plugin->release   = '0.1.0';

@@ -29,3 +29,4 @@ $string['pluginname'] = 'Custom Icons';
 $string['customfieldset'] = 'Custom Activity Icon';
 $string['customfieldlabel'] = 'Select an icon';
 $string['nodefaulticon'] = 'Use default icon';
+$string['usecustomicon'] = 'Use a custom icon for this activity';
